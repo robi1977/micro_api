@@ -20,7 +20,7 @@ const getUser = token => {
   if(token){
     try {
       return jwt.verify(token, process.env.JWT_SECRET);
-    } catch {
+    } catch (err) {
       throw new Error('Błędne dane sesji.');
     }
   }
@@ -28,8 +28,8 @@ const getUser = token => {
 
 async function startApolloServer(typeDefs, resolvers) {
   const app = express();
-  app.use(helmet());
-  app.use(cors());
+  //app.use(helmet());
+  //app.use(cors());
   const httpServer = http.createServer(app);
 
   const server = new ApolloServer({

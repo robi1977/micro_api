@@ -19,11 +19,7 @@ restert serwera za pomocą komendy *rs*
 
 dodanie skryptów:
 ```bash
-  "start": "nodemon src/index.js",
   "dev": "nodemon src/index.js",
-  "final": "nodemon final/index.js",
-  "seed": "node final/util/seed/index.js",
-  "lint": "eslint \"src/**/*.js\""
 ```
 
 `npm install bcrypt cors dotenv helmet jsonwebtoken`

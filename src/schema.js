@@ -8,12 +8,7 @@ module.exports = gql`
     username: String!
     email: String!
   }
-
   type Query {
-
-  }
-
-  type Mutation {
-
+    user(id: ID!):User!
   }
 `;
