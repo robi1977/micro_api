@@ -27,3 +27,5 @@ dodanie skryptów:
 ```
 
 `npm install bcrypt cors dotenv helmet jsonwebtoken`
+`npm install mongoose`
+`npm install graphql-scalars`
