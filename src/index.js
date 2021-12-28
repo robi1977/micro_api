@@ -29,7 +29,7 @@ const getUser = token => {
 async function startApolloServer(typeDefs, resolvers) {
   const app = express();
   //app.use(helmet());
-  //app.use(cors());
+  app.use(cors());
   const httpServer = http.createServer(app);
 
   const server = new ApolloServer({
@@ -58,7 +58,7 @@ async function startApolloServer(typeDefs, resolvers) {
 
   server.applyMiddleware({ app, path: '/api' });
 
-  await new Promise(resolve => httpServer.listen({ port: process.env.PORT || 4000, resolve}));
+  await new Promise(resolve => httpServer.listen({ port: process.env.PORT || 4000 }, resolve));
   console.log(`🚀 Server ready at http://localhost:4000${server.graphqlPath}`);
 }
 
