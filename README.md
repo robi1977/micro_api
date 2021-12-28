@@ -25,3 +25,8 @@ dodanie skryptów:
 `npm install bcrypt cors dotenv helmet jsonwebtoken`
 `npm install mongoose`
 `npm install graphql-scalars`
+
+TODO: utworzyć modele dla potrzebnych kolekcji
+TODO: dodać do "schema.js" niezbedne typy
+TODO: utworzyc zapytania Query
+TODO: utworzyc mutacje potrzebne
